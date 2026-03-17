@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'bbh_bartleregular';
-    src: url('bbhbartle-regular-webfont.woff2') format('woff2'),
-         url('bbhbartle-regular-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit/bbhbartle-regular-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit/bbhbartle-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'bitcount_grid_double_inkRg';
-    src: url('bitcountgriddoubleink-variablefont_crsvelshelxpszp1szp2xpn1xpn2ypn1ypn2slntwght-webfont.woff2') format('woff2'),
-         url('bitcountgriddoubleink-variablefont_crsvelshelxpszp1szp2xpn1xpn2ypn1ypn2slntwght-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit/bitcountgriddoubleink-variablefont_crsvelshelxpszp1szp2xpn1xpn2ypn1ypn2slntwght-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit/bitcountgriddoubleink-variablefont_crsvelshelxpszp1szp2xpn1xpn2ypn1ypn2slntwght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'mountains_of_christmasbold';
-    src: url('mountainsofchristmas-bold-webfont.woff2') format('woff2'),
-         url('mountainsofchristmas-bold-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit/mountainsofchristmas-bold-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit/mountainsofchristmas-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -27,9 +27,126 @@
 
 @font-face {
     font-family: 'mountains_of_christmasregular';
-    src: url('mountainsofchristmas-regular-webfont.woff2') format('woff2'),
-         url('mountainsofchristmas-regular-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit/mountainsofchristmas-regular-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit/mountainsofchristmas-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
+* {
+    font-family: "bitcount_grid_double_inkRg";
+}
+
+body {
+    display: flex;
+}
+
+.left-side-page {
+    background-image: url(./images/premium_background.avif);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-side-page {
+    display:flex;
+    flex-direction: column;
+    max-width: 50vw;
+    min-height: 100vh;
+}
+
+.logo {
+    display: flex;
+    justify-content:center;
+    background-color: rgb(148, 148, 148, 0.4);
+    margin-top: 30vh;
+    margin-bottom: 90vh;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 90%;
+    align-self: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 30vh;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: rgb(238, 238, 238);
+    font-size: small;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    padding: 20px;
+    gap: 10px;
+    box-shadow: 0px 5px rgb(118, 118, 118, 0.3)
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: gray;
+    font-size: smaller;
+}
+
+.form-controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30%;
+    max-height: 100%;
+    margin-bottom: 30px;
+}
+
+.content > h1 {
+    font-size:20px;
+}
+
+.text-control , 
+.pass-control , 
+.email-control ,
+.phone-control {
+    width: 50%;
+    height: 10vh;
+}
+
+label + input {
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+    min-height: 30vh;
+    background-color: rgb(238, 238, 238);
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.footer > h2 {
+    margin: 0px;
+    padding:20px;
+    padding-top: 40px;
+    font-size: medium;   
+}
+
+button {
+    border-radius: 7px;
+    border-color: black;
+    background-color: rgb(74, 74, 74);
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    padding: 7px;
+}
+
+
+
